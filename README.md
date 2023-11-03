@@ -1,1 +1,3 @@
-# proyectodjangojfotask
+# Tareas
+
+Repositorio simple
