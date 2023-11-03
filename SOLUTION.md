@@ -2,8 +2,18 @@
 
 ## Pasos iniciales
 
-Lo primero es lo primero, que es el primer paso, el cual es crear un entorno virtual:
+Lo primero es crear un entorno virtual:
 
+``` bash
+virtualenv tastsvenv
 ```
-python3 -m venv
+Acceder al entorno:
+
+``` bash
+source tastsvenv/bin/activate
+```
+Salir del entorno:
+
+``` bash
+deactivate
 ```
