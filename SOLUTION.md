@@ -26,7 +26,13 @@ Instalamos dichas dependencias:
 ``` bash
 pip install -r requirements.txt
 ```
-
+Crear proyecto de Django
 ``` bash
 django-admin startproject tasks .
+```
+Editamos settings.py
+``` bash
+LANGUAGE_CODE = 'es_es'
+
+TIME_ZONE = 'Europe-Madrid'
 ```
