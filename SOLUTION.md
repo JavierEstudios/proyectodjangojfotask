@@ -26,3 +26,7 @@ Instalamos dichas dependencias:
 ``` bash
 pip install -r requirements.txt
 ```
+
+``` bash
+django-admin startproject tasks .
+```
