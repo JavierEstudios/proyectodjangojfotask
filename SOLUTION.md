@@ -31,8 +31,36 @@ Crear proyecto de Django
 django-admin startproject tasks .
 ```
 Editamos settings.py
-``` bash
-LANGUAGE_CODE = 'es_es'
+``` python
+LANGUAGE_CODE = 'es-ES'
 
-TIME_ZONE = 'Europe-Madrid'
+TIME_ZONE = 'Europe/Madrid'
 ```
+``` python
+STATIC_URL = '/static/'
+
+STATIC_ROOT = BASE_DIR / 'static'
+```
+``` python
+ALLOWED_HOSTS = ['localhost']
+```
+Enlazamos bbdd (no usar esa bbdd en produccion):
+``` python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+```
+Creamos en inicializamos la bbdd:
+``` bash
+python manage.py migrate
+
+```
+Inicialmos el servidor:
+``` bash
+python manage.py runserver
+
+```
+Entramos en el proyecto mediante http://localhost:8000

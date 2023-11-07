@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(!1yu&a=-&7$_+fgc8qn)0+euw$r77)%0g+4hr*vl0rdbjeuap
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -103,9 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'es_es'
+LANGUAGE_CODE = 'es-ES'
 
-TIME_ZONE = 'Europe-Madrid'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
@@ -118,6 +118,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
