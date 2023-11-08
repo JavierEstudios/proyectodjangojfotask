@@ -64,3 +64,20 @@ python manage.py runserver
 
 ```
 Entramos en el proyecto mediante http://localhost:8000
+
+## Crear Applicación
+
+``` bash
+python manage.py startapp task
+```
+``` python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'task',
+]
+```
