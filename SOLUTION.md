@@ -20,7 +20,7 @@ python -m pip install --upgrade pip
 ```
 Creamos requirements.txt con las dependencias a instalar (Django en este caso):
 ``` bash
-Django~=3.2.23
+Django~=4.2.7
 ```
 Instalamos dichas dependencias:
 ``` bash
