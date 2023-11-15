@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Lista de tareas</title>
+    </head>
+    <body>
+        <h1>Lista de tareas</h1>
+        {% for task in tasks %}
+             <a href="{% url 'task-detail' pk=task.pk %}">{{ task.pk }} - {{ task.name }}</a>
+        {% endfor%}
+    </body>
+</html>

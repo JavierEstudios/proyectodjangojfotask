@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Lista de tareas</title>
+    </head>
+    <body>
+        <h1>Detalle de tarea</h1>
+        
+             <p>{{ task.pk }} - {{ task.name }}</p>
+             <p>{{ task.description }}</p>
+             <p>{{ task.done|"yesno:SiNo" }}</p>
+        
+    </body>
+</html>
