@@ -7,11 +7,11 @@ from task.models import Task
 class TaskListView (View):
 
     def get(self,request):
-        tasks=Task.objects.all()
+        tasks = Task.objects.all()
         return render(request,'task/task_list.html',{'tasks':tasks})
     
 class TaskDetailView (View):
 
     def get(self,request,pk):
-        task=  get_object_or_404(Task, pk=pk)
+        task = get_object_or_404(Task, pk=pk)
         return render(request,'task/task_detail.html',{'task':task})
